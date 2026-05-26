@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Css Linked -->
+<link rel="stylesheet" href="css/mainHeader.css">
+<link rel="stylesheet" href="css/mainContent.css">
+<link rel="stylesheet" href="css/movieDetail.css">
+<link rel="stylesheet" href="css/mainFooter.css">
+<link rel="stylesheet" href="css/mainResponsive.css">
+<!-- Css Linked -->
+<!-- Digimovies head icon -->
+<link rel="shortcut icon" href="digiMoviesImg/icon.png" type="image/x-icon">
+<title>دیجی مویز - دانلود و تماشای فیلم و سریال با زیرنویس فارسی چسبیده</title>
+<!-- Digimovies head icon end -->
+</head>
+<body id="page" class="">
+<div id="header" class="light" class="scroll">
+      <div id="topPart" class="light">
+          <!-- digimovies logo and light or dark Mode -->
+          <div id="digiLogo" class="light">
+              <img id="digiLogoImg" src="digiMoviesImg/mainLogo.png" class="light"> 
+              <div id="lightandDarkMode" onclick="changeMode(),lightMode()">
+                  <img src="digiMoviesImg/sun.png">
+                  <div id="changeModeBotton"></div>
+              </div> 
+          </div>
+          <!-- digimovies logo and light or dark Mode end-->
+          <!-- sign in and log in to the digimovies -->
+          <div id="loginToPanel" class="light">
+                <div id="logIn">وارد  شوید</div>
+                <div id="SignIn">ثبت نام</div>  
+          </div>
+          <!-- sign in and log in to the digimovies end-->
+      </div>
+      <!-- digi search && megaMenu and acardion menu -->
+      <div id="bottomPart" class="light">
+            <div id="categoryMovie" class="light">
+                <div id="search" class="light">
+                    <input id="search" class="light" type="text" placeholder="جستجو کنید . . .">
+                    <!-- Digimovies Search -->
+                    <div id="movieResult" class="hide">
+                        <div id="movieItems">
+                            <div class="movieImdb">9</div>
+                            <div class="moviePicture"><img src="digiMoviesImg/searchImg/01.jpg"></div>
+                            <div class="movieName">The Dark Knight 2008
+                                 <div class="movieJanr2">اکشن,جنایی,درام,هیجان انگیز</div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Digimovies Search Finish-->
+                </div>
+                <div id="megaMenu">
+                      <ul>
+                            <li class="digiHome" onclick="showLandingPage()">
+                                <ul>
+                                    <i id="home" class="fa-solid fa-house" style="color:#eb8307"></i>
+                                    <ul class="title">
+                                     <li>خانه</li>
+                                     <li class="orageText">HOME</li>
+                                    </ul>
+                                </ul>
+                            </li>
+                            <li class="digiMovies">
+                                <ul>
+                                    <i id="film" class="fa-solid fa-film" style="color:#eb8307;"></i>
+                                    <ul class="title2">
+                                    <li>دانلود فیلم</li>
+                                    <li class="orageText">MOVIES</li>
+                                    </ul>
+                                </ul>
+                                <ul class="categoryFilm"> 
+                                     <li>دانلود فیلم</li>
+                                     <li>فیلم های دارای پخش آنلاین</li>
+                                     <li>فیلم های پیشنهادی</li>
+                                     <li>فیلم های دوبله فارسی</li>
+                                     <li>سینمای هند</li>
+                                     <ul>
+                                     <li>دانلود انیمیشن</li>
+                                     <li>۲۵۰ فیلم برتر تاریخ</li>
+                                     <li>باکس آفیس</li>
+                                     <li>بزودی</li>
+                                     <li>فیلم های 3 بعدی</li>
+                                     </ul>
+                                </ul>
+                            </li>
+                            <li class="digiSeries">
+                                <ul>
+                                    <i id="tv" class="fa-solid fa-tv" style="color:#eb8307;"></i>
+                                    <ul class="title3">
+                                    <li>دانلود سریال</li>
+                                    <li class="orageText">SERIES</li>
+                                    </ul>
+                                </ul>
+                                <ul class="categorySeries"> 
+                                    <li>دانلود سریال‌</li>
+                                    <li>۲۵۰ سریال برتر تاریخ</li>
+                                    <li>پربازدیدترین سریال ها</li>
+                                    <li>سریال ها پایان یافته</li>
+                                    <li>سریال های کره ای</li>
+                                    <li>مینی سریال</li>
+                                    <ul>
+                                    <li>سریال ها دارای پخش آنلاین</li>
+                                    <li>برترین سریال های قرن 21</li>
+                                    <li>سریال کنسل شده</li>
+                                    <li>سریال های دوبله فارسی</li>
+                                    <li>سریال های انیمیشنی</li>
+                                    <li>انیمه</li>
+                                    </ul>
+                               </ul>
+                            </li>
+                            <li class="digiArtists">
+                                <ul>
+                                    <i id="theater" class="fa-solid fa-masks-theater" style="color:#eb8307;"></i>
+                                    <ul class="title4">
+                                    <li>هنرمندان</li>
+                                    <li class="orageText">ARTISTS</li>
+                                    </ul>
+                                </ul>
+                                <ul class="categoryArtists"> 
+                                    <li>برترین بازیگران مرد</li>
+                                    <li>برترین کارگردانان</li>
+                                    <ul>
+                                    <li>برترین بازیگران زن</li>
+                                    <li>اخبار سینما و هنرمندان</li>
+                                    </ul>
+                               </ul>
+                            </li>
+                            <li class="digiAplications">
+                                <ul>
+                                    <ul class="title5">
+                                    <li>اپلیکیشن</li>
+                                    <li class="orageText">APP</li>
+                                    </ul>
+                                </ul>
+                            </li>
+                      </ul>
+                </div>     
+            </div>
+            <div id="acardionBtn"></div>
+      </div>
+      <!-- digi search && megaMenu and acardion menu end-->
+</div>
+<div id="content" class="" class="light">
+    <!-- All Filtering -->
+    <div id="filterMovies">
+        <!-- filterig movie and series -->
+        <div id="categoryFiltering">
+            <div id="ratingMovie">
+                <div class="digiSide1">سال ساخت
+                    <div>- 1888</div>
+                    <output id="priFromOut">2025</output>
+                    <input type="range" id="priFrom" min="1888" max="2025" step="1" value="2025">
+                </div>
+                <div class="digiSide2">امتیاز
+                    <div>- 1.0</div>
+                    <output id="priFromOut2">10</output>
+                    <input type="range" id="priFrom2" min="1" max="10.0" step="0.1" value="10.0">
+                </div>
+            </div>
+            <div id="categoryAllFilm">
+                <!-- filter Type and The crew behind the scenes of movie  -->
+                <div id="ordination1">
+                        <div id="movieType">نوع
+                            <div id="selectType">
+                                <div id="type1" onclick="selectType()" >فیلم</div>
+                                <div id="type2" onclick="selectType2()">سریال</div>
+                            </div>
+                        </div>
+                        <div id="movieDirectors">کارگردان
+                            <input type="text" placeholder="Christopher Nolan">   
+                        </div>
+                        <div id="movieActorse">بازیگران
+                            <input type="text" placeholder="leonardo dicaprio"> 
+                        </div>
+                </div>
+                <!-- filter Type and The crew behind the scenes of movie finish -->
+                <!-- filter cuntry and viwer age and junr movie -->
+                <div id="ordination2">
+                        <div id="MovieRating1">کشور
+                        <select id="cuntrys">
+                            <option value="allCuntry" onclick="showAllData()">همه</option>
+                            <option value="amerika" onclick="movieFromUSA()">آمریکا</option>
+                            <option value="engelestan" onclick="movieFropEngland()">انگلستان</option>
+                            <option value="alman" onclick="movieFromGermany()">آلمان</option>
+                            <option value="canada" onclick="movieFromCanada()">کانادا</option>
+                        </select>
+                        </div>
+                        <div id="MovieRating2">رده سنی
+                            <select id="viewerAge">
+                                <option value="viewer1" onclick="showAllData()">همه</option>
+                                <option value="viewer2" onclick="ageGroup_R()">R</option>
+                                <option value="viewer3" onclick="ageGroup_TV_14()">TV-14</option>
+                                <option value="viewer4" onclick="ageGroup_PG_13()">PG-13</option>
+                                <option value="viewer5" onclick="ageGroup_PG()">PG</option>
+                                <option value="viewer6" onclick="ageGroup_C18()">C18</option>
+                            </select>
+                        </div>
+                        <div id="MovieRating3">ژانر
+                            <select id="movieJanrs">
+                                <option value="Janr1" onclick="showAllData()">همه</option>
+                                <option value="Janr2" onclick="actionJanr()">اکشن</option>
+                                <option value="Janr3">ماجراجویی</option>
+                                <option value="Janr4">کمدی</option>
+                                <option value="Janr5">جناهی</option>
+                                <option value="Janr6">درام</option>
+                                <option value="Janr7">ترسناک</option>
+                                <option value="Janr8">عاشقانه</option>
+                                <option value="Janr9">علمی تخیلی</option>
+                                <option value="Janr11">فانتزی</option>
+                                <option value="Janr12">رازآلود</option>
+                                <option value="Janr13">موزیکال</option>
+                                <option value="Janr14">هیجان انگیز</option>
+                            </select>
+                        </div>
+                </div>
+                <!-- filter cuntry and viwer age and junr movie finish-->
+                <!-- filter qality & canal and best movie  -->
+                <div id="ordination3">
+                    <div id="movieQoality">
+                        <div id="MovieRating1">کیفیت
+                            <select id="qoality">
+                                <option value="all" onclick="showAllData()">همه</option>
+                                <option value="qoality1" onclick="qoulity_1080p()">1080p BluRay</option>
+                                <option value="qoality2" onclick="qoulity_1080Web()">1080p WEB-DL</option>
+                                <option value="qoality3" onclick="qoulity_720p()">720p BluRay</option>
+                                <option value="qoality6" onclick="qoulity_2160p()">2160p 4K BluBry</option>
+                            </select>
+                        </div>
+                        <div id="filmCanal">شبکه
+                                <select id="canal">
+                                    <option value="canal1" onclick="showAllData()">همه</option>
+                                    <option value="canal2" onclick="canal_fox()">FOX</option>
+                                    <option value="canal3" onclick="canal_amc()">AMC</option>
+                                    <option value="canal5" onclick="canal_netflix()">Netflix</option>
+                                </select>
+                        </div>
+                        <div id="arrangement">ترتیب
+                                <select id="orders">
+                                    <option value="order1" onclick="showAllData()">همه</option>
+                                    <option value="order2">جدید ترین ها</option>
+                                    <option value="order3">imdb بالا ترین امتیاز </option>
+                                    <option value="order4">imdb بیشترین رای</option>   
+                                </select>
+                        </div>   
+                    </div>
+                </div>
+                <!-- filter qality & canal and best movie  finish-->
+                <div id="ordination4">
+                      <div id="movieLanguage" onclick="filterOn()">دوبله فارسی</div>
+                      <div id="movieCensored" onclick="filterOn2()">سانسور شده</div>
+                      <div id="movieSubtitle" onclick="filterOn3()">زیرنویس</div>
+                      <div id="onlineMovie" onclick="filterOn4()">پخش آنلاین</div>
+                </div>
+            </div>
+        </div>
+        <!-- filterig movie and series end -->
+        <!-- filtering icon  -->
+        <div class="filterIcon">
+             <div>جستجو</div>
+             <div style="color: #eb8307;">حرفه ای</div>
+        </div>
+        <!-- filtering icon  -->
+    </div>
+    <!-- All Filtering Finish-->
+    <!-- Newest Movie and Series and category that-->
+    <div id="newestMovie">
+            <!-- Movie That Maked With Json Data  -->
+            <div id="topMovies">
+                     <!-- <div id="movieBaner" class="movieBaner">
+                       <div id="movieInformation" class="movieInformation">
+                            <div class="movieTitle">All We Imagine as Light 2024 دانلود فیلم
+                                <div class="moviePoints">
+                                    <div class="pointAndVotes">/10
+                                        <div class="points">7.4</div>
+                                    </div>
+                                    <div class="votes">3.1K Votes</div>
+                                    <div class="favoriteMovieBtn"></div>
+                                    <div class="subTitle"></div>
+                                    <div class="iranianLanguage"></div>
+                                </div>
+                            </div>
+                            <div class="movieQoality"> کیفیت : 1080p WEB-DL</div>
+                            <div class="movieTime">زمان : 118 دقیقه</div>
+                            <div class="movieJanr">ژانر : درام , عاشقانه</div>
+                            <div class="movieDrector"> کارگردان : Payal Kapadia</div>
+                            <div class="movieStars">ستارگان : Kani Kusruti,Divya Prabha,Chhaya Kadam</div>
+                            <div class="movieCuntrys"> محصول کشور : آمریکا , ایتالیا , بلژیک , سوئیس , فرانسه , لوکزامبورگ , هلند , هندوستان</div>
+                            <div class="movieDiscription">داستان پرستاری در بمبئی به‌نام پرابها که هدیه‌ای غیرمنتظره از همسرش دریافت می‌کند و روال زندگی‌اش دستخوش تغییراتی می‌شود که...</div>
+                            <div class="downloadTitle">ادامه /
+                                <div class="downlaodFilm">دانلود</div>
+                            </div>
+                       </div>
+                       <div id="movieCover" class="movieCover">
+                            <div class="images"><img src="digiMoviesImg/newestMovies/1.jpg"></div>
+                            <div class="movieTiser">مشاهده تریلر
+                                <div class="tilerIcon2"></div>
+                                <div class="tilerIcon"></div>
+                            </div>
+                       </div>
+                   </div>  -->       
+            </div>
+            <!-- Movie That Maked With Json Data Finish-->
+            <div id="topSeries">
+                <!-- the best new series in 2024 / 2025 -->
+                <div id="newestSeries">
+                    <div id="tittleBox">
+                         <div class="bold">سریال های</div>
+                         <div>بروز شده</div>
+                    </div>
+                    <div class="seriesTablo">
+                          <div><img src="digiMoviesImg/newestSeries/01.png"></div>
+                          <div class="seriesPart">
+                            فصل دوم با زیرنویس منتشر شد
+                            <div>7</div>
+                            قسمت
+                          </div>
+                    </div>
+                    <div class="updateSeries1">
+                        <div><img src="digiMoviesImg/newestSeries/01.jpg"></div>
+                        <div class="updateTitle1">
+                            فصل دوم با زیرنویس منتشر شد
+                            <div>8</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries2">
+                        <div><img src="digiMoviesImg/newestSeries/02.jpg"></div>
+                        <div class="updateTitle2">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>5</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries3">
+                        <div><img src="digiMoviesImg/newestSeries/03.jpg"></div>
+                        <div class="updateTitle3">
+                            فصل سوم با زیرنویس منتشر شد
+                            <div>8</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries4">
+                        <div><img src="digiMoviesImg/newestSeries/04.jpg"></div>
+                        <div class="updateTitle4">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>6</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries5">
+                        <div><img src="digiMoviesImg/newestSeries/05.jpg"></div>
+                        <div class="updateTitle5">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>9</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries6">
+                        <div><img src="digiMoviesImg/newestSeries/06.jpg"></div>
+                        <div class="updateTitle6">
+                            فصل پنجم با زیرنویس منتشر شد
+                            <div>14</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries7">
+                        <div><img src="digiMoviesImg/newestSeries/07.jpg"></div>
+                        <div class="updateTitle7">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>10</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries8">
+                        <div><img src="digiMoviesImg/newestSeries/08.jpg"></div>
+                        <div class="updateTitle8">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>7</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries9">
+                        <div><img src="digiMoviesImg/newestSeries/09.jpg"></div>
+                        <div class="updateTitle9">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>4</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries10">
+                        <div><img src="digiMoviesImg/newestSeries/10.jpg"></div>
+                        <div class="updateTitle10">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>6</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries11">
+                        <div><img src="digiMoviesImg/newestSeries/11.jpg"></div>
+                        <div class="updateTitle11">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>2</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries12">
+                        <div><img src="digiMoviesImg/newestSeries/12.jpg"></div>
+                        <div class="updateTitle12">
+                            فصل اول با زیرنویس منتشر شد
+                            <div>6</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries13">
+                        <div><img src="digiMoviesImg/newestSeries/13.jpg"></div>
+                        <div class="updateTitle13">
+                            فصل اول با زیرنویس فارسی منتشر شد
+                            <div>6</div>
+                            قسمت
+                        </div>
+                    </div>
+                    <div class="updateSeries14">
+                        <div><img src="digiMoviesImg/newestSeries/14.jpg"></div>
+                        <div class="updateTitle14">
+                            فصل دوم با زیرنویس فارسی منتشر شد
+                            <div>3</div>
+                            قسمت
+                        </div>
+                    </div>
+                </div>  
+                <!-- the best new series in 2024 / 2025 end-->
+                <!-- first slider about movie with Iraninan languege -->
+                <div id="FarsiDubbedMovies">
+                <div class="titleBox2">
+                    <div class="bold2">فیـــلم هــای </div>
+                    <div>دوبله فارسی</div>
+                </div>
+                <div id="slider1">
+                    <div id="galeryImage1">
+                         <div class="items">  
+                              <img src="digiMoviesImg/digiSlider1/01.png">
+                              <div>Despicable Me 4 2024</div>	
+                              <div class="point"> /10
+                              <div class="orange">6.2</div>
+                              </div>		
+                         </div>
+                         <div class="items">  
+                              <img src="digiMoviesImg/digiSlider1/02.png">		
+                              <div>Puss in Boots : 2022</div>	
+                              <div class="point"> /10
+                              <div class="orange">7.8</div>
+                              </div>	
+                         </div>		
+                         <div class="items">  
+                              <img src="digiMoviesImg/digiSlider1/03.png">	
+                              <div>Birth 2004</div>	
+                              <div class="point"> /10
+                              <div class="orange">6.2</div>
+                              </div>		
+                         </div>		
+                         <div class="items">  
+                              <img src="digiMoviesImg/digiSlider1/04.png">		
+                              <div>Hitman: Agent 47 2015</div>	
+                              <div class="point"> /10
+                              <div class="orange">5.7</div>
+                              </div>	
+                         </div>	
+                         <div class="items">  
+                              <img src="digiMoviesImg/digiSlider1/05.png">	
+                              <div>Spider-Man : 2023</div>	
+                              <div class="point"> /10
+                              <div class="orange">8.6</div>
+                              </div>   		
+                         </div>	            
+                    </div>  
+                    <div id="right1"></div>  	
+                    <div id="left1"></div>    
+               </div>
+                </div>
+                <!-- first slider about movie with Iraninan languege end-->
+                <!-- category movie and series in other part -->
+                <div id="factionMovies">
+                    <div class="titleBox3">
+                        <div class="bold3">دسته بندی </div>
+                        <div>فیلم ها</div>
+                    </div>
+                    <div id="factionFilm">
+                         <div>اکشن</div>
+                         <div>ماجراجویی</div>
+                         <div>کمدی</div>
+                         <div>جناهی</div>
+                         <div>درام</div>
+                         <div>ترسناک</div>
+                         <div>عاشقانه</div>
+                         <div>علمی تخیلی</div>
+                         <div>خانوادگی</div>
+                         <div>فانتزی</div>
+                         <div>رازآلود</div>
+                         <div>موزیکال</div>
+                         <div>هیجان انگیز</div>
+                    </div>
+                </div>
+                <div id="factionseries">
+                    <div class="titleBox4">
+                        <div class="bold4">دسته بندی </div>
+                        <div>سریال ها</div>
+                    </div>
+                    <div id="factionSerie">
+                         <div>اکشن</div>
+                         <div>ماجراجویی</div>
+                         <div>کمدی</div>
+                         <div>جناهی</div>
+                         <div>درام</div>
+                         <div>ترسناک</div>
+                         <div>عاشقانه</div>
+                         <div>علمی تخیلی</div>
+                         <div>خانوادگی</div>
+                         <div>فانتزی</div>
+                         <div>رازآلود</div>
+                         <div>موزیکال</div>
+                         <div>هیجان انگیز</div>
+                    </div>
+                </div>
+                <!-- category movie and series in other part end-->
+                <!-- Incoming Movie Tiler -->
+                <div id="movieIncoming">
+                    <div class="titleBox5">
+                        <div class="bold5">تریلرها</div>
+                        <div>به زودی</div>
+                    </div>
+                    <div class="tilerCover"></div>
+                    <div class="coverName">The People We Hate at the Wedding 2022</div>
+                </div>
+                <!-- Incoming Movie Tiler end-->
+            </div>
+    </div>
+    <!-- Move to next page for see other movies & series Btns -->
+    <div id="wentOtherMovies">
+          <div class="selectPage">
+              <div>1</div>
+          </div>
+          <div>
+                <div>2</div>
+          </div>
+          <div>
+                <div>3</div>
+          </div>
+          <div>
+                <div>4</div>
+          </div>
+          <div>
+               <div>5</div>
+          </div>
+          <div>
+               <div>6</div>
+          </div>
+          <div>
+               <div>7</div>
+          </div>
+          <div>
+               <div>...</div>
+          </div>
+          <div class="otherPage">
+               <div class="otherPage">858</div>
+          </div>
+          <div class="otherPage">
+               <div class="otherPage">859</div>
+          </div>
+          <div class="otherPage">
+               <div class="otherPage">860</div>
+          </div>
+          <div class="otherPage">
+               <div class="otherPage">861</div>
+          </div>
+          <div class="otherPage">
+               <div class="otherPage">862</div>
+          </div class="otherPage">
+          <div class="otherPage">
+               <div class="otherPage">863</div>
+          </div>
+          <div class="otherPage">
+               <div class="otherPage">864</div>
+          </div>
+          <div class="goNextPageBtn">
+               <div></div>
+          </div>
+    </div>
+    <!-- Move to next page for see other movies & series Btns end-->
+    <!-- Newest Movie and Series and category that Finish-->
+</div>
+</div>
+<!-- Movies Pages -->
+<div id="movieDetail" class="hide" class="light">
+    <!-- Detail navigation Botton -->
+    <div id="backToHomeBtn">
+            <div id="homeBtn" onclick="showLandingPage()">دیجی موویز</div>
+            <div id="downlaodFilmBtn">دانلود فیلم</div>
+            <div id="thisMovie">دانلود فیلم The Dark Knight 2008</div>
+    </div>
+    <!-- Detail navigation Botton Finish -->
+    <!-- all data about detail movie witch maked with Json Data -->
+    <div id="detailInformation">
+        <img id="detailInformationImg" src="digiMoviesImg/movieDetail/01.jpg">
+        <div id="MovieData">
+           <!-- Detail movie information -->
+           <div id="leftPart">
+                <div id="filmTitle">
+                    دانلود فیلم The Dark Knight 2008  
+                </div>
+                <div id="moviePoint">
+                    <div id="point">/10
+                         <div id="pointValiu">9</div>
+                    </div>
+                    <div id="votes">2.8M Votes</div>
+                    <div id="favoriteFilmBtn"></div>
+                    <div class="movieSubtitle2"></div>
+                    <div class="iranianLanguage2"></div>
+               </div>
+                <ul>
+                    <li id="movieQoality2">کیفیت : 2160p 4K BluRay</li>
+                    <li id="movieTime2">زمان : 152 دقیقه</li>
+                    <li id="movieJanr2">ژانر : اکشن , جنایی , درام , هیجان انگیز</li>
+                    <li id="movieAgg">رده سنی : PG-13</li>
+                    <li id="movieDirector2">کارگردان : christopher nolan</li>
+                    <li id="movieCuntrys2"> محصول کشور : آمریکا , انگلستان</li>
+                    <li id="movieWriter">نویسنده : Jonathan Nolan,Christopher Nolan</li>
+                    <li id="movieCanal">شبکه : FOX</li>
+                    <li id="movieStars">ستارگان : christian bale,heath ledger,aaron eckhart</li>
+                    <div id="movieDiscroption2">بتمن به کمک سرگرد جیم گوردون و دادستان جدید هاروی دنت، شهر را از وجود آخرین خانواده‌های تبهکاری پاک می کند. همکاری این سه نفر ظاهرا موثر واقع میشود، اما طولی نمی کشد که خود را در مقابل هرج و مرج های یک تبهکار نو پا بنام جوکر، عاجز می بینند.</div>
+                </ul>
+           </div>
+           <!-- Detail movie information end -->
+           <!-- movie cover and watch treyler -->
+           <div id="rightPart">
+                <div id="movieCover"><img id="movieCoverImg" src="digiMoviesImg/movieDetail/1.jpg"></div>
+                <div id="watchTreyler">
+                      <div class="treylerIcon"></div>
+                </div>
+                <div class="treylerText">مشاهده تریلر</div>
+                <div class="onlineWatchFilm">پخش آنلاین</div>
+           </div>
+           <!-- movie cover and watch treyler end -->
+        </div>
+    </div>
+    <!-- all data about detail movie witch maked with Json Data Finish -->
+</div>
+<!-- Movies Pages End-->
+<div id="footer" class="light">
+    <div class="footerRol"></div>
+    <!-- last information about digiMovies -->
+    <div id="footerCels">
+            <div id="communicationWithUs">
+                  <div id="telegram">عضویت در کانال تلگرام
+                        <div class="englishLangouge">TELEGRAM CHANNEL</div>
+                  </div>
+                  <div id="instagram">مشاهده در اینستاگرام
+                        <div class="englishLangouge">INSTAGRAM PAGE</div>
+                  </div>
+            </div>
+            <div class="footerMenu">
+                <ul>
+                    <li>دانلود فیلم</li>     <li>پخش آنلاین فیلم ها</li>
+                    <li>۲۵۰ فیلم برتر تاریخ</li>     <li>باکس آفیس</li>
+                    <li>قوانین و مقررات</li>     <li>دانلود سریال‌</li>
+                    <li>پخش آنلاین سریال ها</li>     <li>۲۵۰ سریال برتر تاریخ</li>
+                    <li>سوالات متداول</li>     <li>DMCA POLICY</li>
+                </ul>
+            </div>
+            <div id="Slider2">
+                <div id="galeryImage2">
+                    <div class="items2">  
+                         <img src="digiMoviesImg/footerSlider/01.jpg">
+                         <div>منتشر شد Heart eyes اولین تریلر از فیلم ترسناک</div>	
+                    </div>
+                    <div class="items2">  
+                         <img src="digiMoviesImg/footerSlider/02.jpg">	
+                         <div>منتشر شد A Working Man اولین تریلر از فیلم</div>
+                    </div>		
+                    <div class="items2">  
+                         <img src="digiMoviesImg/footerSlider/03.jpg">	
+                         <div>منتشر شد Campanian اولین تریلر از فیلم</div>		
+                    </div>		
+                    <div class="items2">  
+                         <img src="digiMoviesImg/footerSlider/04.jpg">	
+                         <div>منتشر شد The Lost Lans اولین تریلر از فیلم</div>	
+                    </div>	
+                    <div class="items2">  
+                         <img src="digiMoviesImg/footerSlider/05.jpg">	
+                         <div>منتشر شد Kinda Pregnant اولین تریلر از فیلم کمدی</div>  		
+                    </div>	            
+               </div>  
+                   <div id="right2"></div>  	
+                   <div id="left2"></div>    
+            </div>
+    </div>
+    <!-- last information about digiMovies Finish -->
+</div>
+<!-- Botton for back to first part of site -->
+<a id="upBotton" href="#header"></a>
+<!-- Botton for back to first part of site Finish-->
+<!-- javascript and json Linked -->
+<script src="script/main.js"></script>
+<script src="script/fontAwsome.js"></script>
+<script src="script/FirstSlider.js"></script>
+<script src="script/footerSlider.js"></script>
+<script src="script/Search.js"></script>
+<script src="script/Movies.json"></script>
+<script src="script/generate.js"></script>
+<!-- javascript and json Linked Finish-->
+</body>
+</html>

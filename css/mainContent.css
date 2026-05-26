@@ -1,0 +1,1187 @@
+@font-face {
+   src: url(../fonts/Qs_Iranyekan.ttf);
+   font-family: digiFont;
+}
+/* up botton */
+#upBotton{
+	position: fixed;
+	bottom:30px;
+	right:20px;
+	background: #1c1c1c url("../digiMoviesImg/upBotton.png") no-repeat 50% 45%;
+	background-size: 23px;
+	padding: 23px;
+	border-radius: 100%;
+   text-decoration: none;
+	opacity: 0;
+	transition: 0.5s;
+   z-index: 10000;
+}
+/* up botton end */
+/* digimovies Light mode */
+.light > #content > #filterMovies{
+   background: #fff;
+   border: 1px solid rgba(0,0,0,.1);
+   color: #333;
+}
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieType > #selectType,
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieType > #selectType > div{
+  background: #ccc;
+  color: #333;
+}
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieDirectors > input,
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieActorse > input,
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating1 > #cuntrys,
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating2 > #viewerAge,
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating3 > #movieJanrs,
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #MovieRating1 > #qoality,
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #filmCanal > #canal,
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #arrangement > #orders,
+.light > #content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide1 > input[type=range],
+.light > #content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide2 > input[type=range]{
+   background: #ccc;
+}
+.light > #content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination4 > div{
+   background: url("../digiMoviesImg/turnOff2.png") no-repeat 21% -20%;
+   background-size: 30px;
+}
+.light > #content > #filterMovies > .filterIcon{
+   background:#f0f0f0 url("../digiMoviesImg/advSearch.png") no-repeat  51% 23%;
+   background-size: 69.5px;
+}
+.light > #content > #newestMovie > #topMovies > .movieBaner{
+   background: #fff;
+}
+.light > #content > #newestMovie > #topMovies > .movieBaner > .movieInformation > div{
+   color: #000;
+}
+.light > #content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser{
+   background: #ccc;
+   color: #000;
+}
+.light > #content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser > .tilerIcon{
+   background:#f2f2f2 url("../digiMoviesImg/newestMovies/tiler1.png") no-repeat 50%;
+   background-size: 30px;
+}
+.light > #content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser > .tilerIcon2{
+   background:#f2f2f2;
+}
+.light > #content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle > .moviePoints > .favoriteMovieBtn{
+   background: url("../digiMoviesImg/newestMovies/favorite2.png") no-repeat 50%;
+   background-size: 19px;
+}
+.light > #content > #newestMovie > #topSeries > #newestSeries{
+   background: #fff;
+   color: #333;
+}
+.light > #content > #newestMovie > #topSeries > #newestSeries > #tittleBox > .bold{
+   color: #000;
+}
+
+.light > #content > #newestMovie > #topSeries > #newestSeries > .seriesTablo > .seriesPart,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries1 > .updateTitle1,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries2 > .updateTitle2,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries3 > .updateTitle3,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries4 > .updateTitle4,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries5 > .updateTitle5,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries6 > .updateTitle6,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries7 > .updateTitle7,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries8 > .updateTitle8,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries9 > .updateTitle9,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries10 > .updateTitle10,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries11 > .updateTitle11,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries12 > .updateTitle12,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries13 > .updateTitle13,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries14 > .updateTitle14{
+   background: #bbb;
+   color: #fff;
+}
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries1 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries2 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries3 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries4 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries5 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries6 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries7 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries8 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries9 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries10 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries11 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries12 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries13 > div > img,
+.light > #content > #newestMovie > #topSeries > #newestSeries > .updateSeries14 > div > img{
+   opacity: 1;
+}
+.light > #content > #newestMovie > #topSeries > #FarsiDubbedMovies,
+.light > #content > #newestMovie > #topSeries > #factionMovies,
+.light > #content > #newestMovie > #topSeries > #factionseries,
+.light > #content > #newestMovie > #topSeries > #movieIncoming{
+   background: #fff;
+   color: #000;
+}
+.light > #content > #newestMovie > #topSeries > #FarsiDubbedMovies > .titleBox2 > div:not(.bold2),
+.light > #content > #newestMovie > #topSeries > #factionMovies > .titleBox3 > div:not(.bold3),
+.light > #content > #newestMovie > #topSeries > #factionseries > .titleBox4 > div:not(.bold4),
+.light > #content > #newestMovie > #topSeries > #movieIncoming > .titleBox5 > div:not(.bold5){
+   color: #333;
+}
+.light > #content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #right1{
+   background:#bbb url("../digiMoviesImg/digiSlider1/right.png") no-repeat;
+   background-size: contain;
+}
+.light > #content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #left1{
+   background:#bbb url("../digiMoviesImg/digiSlider1/left.png") no-repeat;
+   background-size: contain;
+}
+.light > #content > #newestMovie > #topSeries > #factionMovies > #factionFilm > div,
+.light >  #content > #newestMovie > #topSeries > #factionseries > #factionSerie > div{
+   background: url("../digiMoviesImg/digiSlider1/left2.png") no-repeat 97.5%;
+   background-size: 15px;
+   color: #000;
+}
+.light > #content > #wentOtherMovies{
+   color: #000;
+}
+.light > #content > #wentOtherMovies > div.selectPage,
+.light > #content > #wentOtherMovies > div.goNextPageBtn{
+   background: #ccc;
+   color: #000;
+}
+.light > #content > #wentOtherMovies > div.goNextPageBtn > div{
+   background: url("../digiMoviesImg/digiSlider1/right2.png") no-repeat 50%;
+   background-size: 20px;
+}
+.light > #content  > #wentOtherMovies > div:hover:not(.selectPage,.goNextPageBtn){
+   background: #ccc;
+   color: #000;
+}
+.light > #upBotton{
+   background: #ccc url("../digiMoviesImg/upBotton.png") no-repeat 50% 45%;
+	background-size: 23px;
+}
+/*digimovies Light mode finish */
+#content{
+   \\border: 1px solid #ccc;
+   max-width:1536px !important;
+   height: 5250px;
+   margin: auto;
+}
+#content > #filterMovies{
+   max-width: 1170px;
+   height: 266px;
+   margin: auto;
+   margin-top: 25px;
+   background: #242424;
+   border-radius: 10px;
+   display: flex;
+}
+
+#content > #filterMovies > .filterIcon{
+   width: 175.5px;
+   height: 100%;
+   border-radius: 0px 10px 10px 75px;
+   background:#1c1c1c url("../digiMoviesImg/advSearch.png") no-repeat  51% 23%;
+   background-size: 69.5px;
+   text-align: center;
+   align-items: center;
+   line-height: 44px;
+   font-size: 13.5px;
+}
+#content > #filterMovies > .filterIcon > div{
+   position: relative;
+   top: 145px;
+}
+/* filtering movie and seriese */
+#content > #filterMovies > #categoryFiltering{
+   \\border: 1px solid #ccc;
+   width: 994px;
+   height: 100%;
+   display: flex;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie{
+   \\border: 1px solid #ccc;
+   max-width: 240px;
+   height: 120px;
+   margin-left: 15px;
+   margin-top: 25px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm{
+   \\border: 1px solid #ccc;
+   width: 716px;
+   height: 82%;
+   margin-top: 20px;
+   margin-left: 2px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1,
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2,
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3{
+   \\border: 1px solid #ccc;
+   width: 100%;
+   height: 28%;
+   display: flex;
+   align-items:top;
+   justify-content: space-between;
+   text-align: start;
+   direction: rtl;
+   position: relative;
+   top: 10px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieType{
+   /* border: 1px solid #ccc; */
+   width: 162px;
+   height: 35px;
+   font-size: 15px;
+   display: flex;
+   line-height: 30px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieType > #selectType{
+   width: 111px;
+   height: 35px;
+   border-radius: 35px;
+   background: #1c1c1c;
+   margin-right: 10px;
+   display: flex;
+   line-height: 23px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieType > #selectType > div{
+   width: 51px;
+   height: 25px;
+   font-size: 13px;
+   text-align: center;
+   border-radius: 35px;
+   position: relative;
+   right: 5px;
+   top: 5px;
+   cursor: pointer;
+   background: #1c1c1c;
+   user-select: none;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieDirectors{
+   width:239px;
+   height: 35px;
+   font-size: 14px;
+   display: flex;
+   line-height: 30px;
+   margin-left: 25px;
+   justify-content: space-between;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieDirectors > input{
+   width: 182px;
+   min-width: 162px;
+   border-radius: 35px;
+   background: #1c1c1c;
+   color: #646464;
+   border: 0 none;
+   outline: 0 none;
+   text-indent: 10px;
+   cursor: pointer;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieActorse{
+   width:239px;
+   height: 35px;
+   font-size: 14px;
+   display: flex;
+   line-height: 30px;
+   position: relative;
+   left: 25px;
+   justify-content: space-between;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination1 > #movieActorse > input{
+   width: 182px;
+   min-width: 162px;
+   border-radius: 35px;
+   background: #1c1c1c;
+   color: #646464;
+   border: 0 none;
+   outline: 0 none;
+   text-indent: 10px;
+   cursor: pointer;
+}
+/* grouping 1 */
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating1{
+   width: 238px;
+   height: 35px;
+   font-size: 14px;
+   text-indent: 8px;
+   line-height: 30px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating1 > #cuntrys{
+   background: #1c1c1c;
+   color: #646464;
+   width: 190px;
+   height: 35px;
+   border-radius: 35px;
+   padding: 0 10px;
+   border: 0 none;
+   cursor: pointer;
+}
+/* grouping 1 end */
+/* grouping 2 */
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating2{
+   width: 238px;
+   height: 35px;
+   font-size: 14px;
+   text-indent: 8px;
+   line-height: 30px;
+   display: flex;
+   justify-content: space-between;
+   margin-left: 30px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating2 > #viewerAge{
+   background: #1c1c1c;
+   color: #646464;
+   width: 165px;
+   height: 35px;
+   border-radius: 35px;
+   padding: 0 10px;
+   border: 0 none;
+   margin-left: 5px;
+   cursor: pointer;
+}
+/* grouping 2 end */
+/* grouping 3 */
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating3{
+   width: 216px;
+   height: 35px;
+   font-size: 14px;
+   text-indent: 8px;
+   line-height: 30px;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   left: 25px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination2 > #MovieRating3 > #movieJanrs{
+   background: #1c1c1c;
+   color: #646464;
+   width: 165px;
+   height: 35px;
+   border-radius: 35px;
+   padding: 0 10px;
+   border: 0 none;
+   margin-left: 12px;
+   cursor: pointer;
+}
+/* grouping 3 end */
+/* rating 1 */
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality{
+   display: flex;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #MovieRating1{
+   width: 216px;
+   height: 35px;
+   font-size: 14px;
+   text-indent: 8px;
+   line-height: 30px;
+   display: flex;
+   justify-content: space-between;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #MovieRating1 > #qoality{
+   background: #1c1c1c;
+   color: #646464;
+   width: 180px;
+   height: 35px;
+   border-radius: 35px;
+   padding: 0 10px;
+   border: 0 none;
+   margin-right: 7px;
+   cursor: pointer;
+}
+/* rating 1 end */
+/* rating 2 */
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #filmCanal{
+   width: 216px;
+   height: 35px;
+   font-size: 14px;
+   text-indent: 8px;
+   line-height: 30px;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   right: 20px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #filmCanal > #canal{
+   background: #1c1c1c;
+   color: #646464;
+   width: 165px;
+   height: 35px;
+   border-radius: 35px;
+   padding: 0 10px;
+   border: 0 none;
+   margin-left: 4px;
+   cursor: pointer;
+}
+/* rating 2 end*/
+/* rating 3 */
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #arrangement{
+   width: 216px;
+   height: 35px;
+   font-size: 14px;
+   text-indent: 8px;
+   line-height: 30px;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   right: 48px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination3 > #movieQoality > #arrangement > #orders{
+   background: #1c1c1c;
+   color: #646464;
+   min-width: 165px;
+   height: 35px;
+   border-radius: 35px;
+   padding: 0 10px;
+   border: 0 none;
+   cursor: pointer;
+}
+/* rating 3 end*/
+/* rating 4 */
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination4{
+   \\border: 1px solid #ccc;
+   width: 510px;
+   height: 18%;
+   display: flex;
+   align-items:top;
+   justify-content: space-between;
+   text-align: start;
+   direction: rtl;
+   position: relative;
+   top: 10px;
+   left: 28.5%;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination4 > div{
+   width: 25%;
+   height: 100%;
+   font-size: 13px;
+   background: url("../digiMoviesImg/turnOff.png") no-repeat 21% -20%;
+   background-size: 30px;
+   cursor: pointer;
+   user-select: none;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination4 > #movieSubtitle{
+   width: 20%;
+   margin-left: 20px;
+}
+#content > #filterMovies > #categoryFiltering > #categoryAllFilm > #ordination4 > #onlineMovie{
+   position: relative;
+   left: 12 px;
+}
+/* rating 4 finish */
+/* side bar movie */
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide1{
+   max-width: 100%;
+   font-size: 14.5px;
+   direction: rtl;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide1 > div{
+   color: #eb8307;
+   margin-top: -25px;
+   margin-right: 190px;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide1 > output{
+   color: #eb8307;
+   margin-right: 150px; 
+   position: absolute;
+   top: 241px;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide1 > input[type=range]{
+   appearance:none;
+	background: #000000;
+	width: 100%;
+	height: 5px;
+	border-radius: 5px;
+	display: block;
+	margin: 15px auto;
+   direction: ltr;
+   cursor: pointer;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide1 > input[type=range]::-moz-range-thumb{
+   width: 20px;
+   height: 20px;
+   background: url("../digiMoviesImg/megaMenu/rhombus.png") no-repeat 00%;
+   background-size: 20px;
+   border: 0 none;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide2{
+   font-size: 14.5px;
+   direction: rtl;
+   position: relative;
+   top: 5px;
+   max-width: 100%;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide2 > div{
+   color: #eb8307;
+   margin-top: -25px;
+   margin-right: 200px;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide2 > output{
+   color: #eb8307;
+   margin-right: 176px;
+   position: absolute;
+   top: -0.4px;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide2 > input[type=range]{
+   appearance:calc(#ddd);
+	background: #000000;
+	width: 100%;
+	height: 5px;
+	border-radius: 5px;
+	display: block;
+	margin: 15px auto;
+   direction: ltr;
+   cursor: pointer;
+   border: 0 none;
+}
+#content > #filterMovies > #categoryFiltering > #ratingMovie > .digiSide2 > input[type=range]::-moz-range-thumb{
+   width: 20px;
+   height: 20px;
+   background: url("../digiMoviesImg/megaMenu/rhombus.png") no-repeat 00%;
+   background-size: 20px;
+   border: 0 none;
+}
+/* side bar movie end*/
+/* filtering movie and seriese end */
+/* Newest Movie and Series */
+#content > #newestMovie{
+   \\border: 1px solid #ccc;
+   max-width: 1170px;
+   height: 4816px;
+   margin: auto;
+   margin-top: 35px;
+   display: flex;
+}
+#content > #newestMovie > #topMovies{
+   \\border: 1px solid #ccc;
+   width: 857px;
+   height: 100%;
+}
+#content > #newestMovie > #topMovies > .movieBaner{
+   width: 100%;
+   height: 444px;
+   background: #242424;
+   border-radius: 10px;
+   margin-top: 25px;
+   position: relative;
+   bottom: 25px;
+   display: flex;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation{
+   \\border: 1px solid #ff0000;
+   max-width: 585px;
+   height: 424px;
+   margin-left: 20px;
+   position: relative;
+   top: 20px;
+   direction: rtl;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > div{
+   \\border: 1px solid #ccc;
+   width: 100%;
+   height: 23px;
+   color: #fff;
+   font-size: 13.5px;
+   line-height: 20px;
+   direction: rtl;
+}
+
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle{
+   height: 50px;
+   direction: ltr;
+   justify-content: start;
+   text-align: end;
+   font-size: 18.5px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle > .moviePoints{
+   \\border: 1px solid #ccc;
+   width: 119px;
+   height: 77px;
+   margin-top: -21px;
+   background:url("../digiMoviesImg/newestMovies/imdbLogo.png") no-repeat 10% 100%;
+   background-size: 50px;
+   font-size: 13px;
+   line-height: 30px;
+   text-align: center;
+   text-indent: 35px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle > .moviePoints > .pointAndVotes{
+   \\border: 1px solid #ccc;
+   width: 72px;
+   height: 100%;
+   display: flex;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle > .moviePoints > .pointAndVotes > .points{
+   color: #eb8307;
+   text-indent:-70px;
+   font-size: 18.5px;
+   line-height: 25px;
+   font-weight: bold;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle > .moviePoints > .votes{
+   position: relative;
+   top: -49px;
+   right: 45px;
+   font-size: 13.5px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle > .moviePoints > .favoriteMovieBtn{
+   border: 1px solid #404040;
+   width: 32px;
+   height: 32px;
+   border-radius: 35px;
+   position: relative;
+   left: 85px;
+   top: -105px;
+   background: url("../digiMoviesImg/newestMovies/favorite.png") no-repeat 50%;
+   background-size: 19px;
+   cursor: pointer;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle > .moviePoints > .subTitle{
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   right: 98.6%;
+   margin-top: 20px;
+   background: url("../digiMoviesImg/newestMovies/subtittle.png") no-repeat;
+   background-size: contain;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTitle > .moviePoints > .iranianLanguage{
+   width: 60px;
+   height: 60px;
+   position: absolute;
+   right: 98.6%;
+   margin-top: -40px;
+   background: url("../digiMoviesImg/newestMovies/farsylanguege.png") no-repeat;
+   background-size: contain;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieQoality{
+   width: 333px;
+   text-indent: 24px;
+   background: url("../digiMoviesImg/movieDetail/01.png") no-repeat 99.3% 60%;
+   background-size: 17.5px;
+   position: relative;
+   top: 5.5px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTime{
+   text-indent: 24px;
+   background: url("../digiMoviesImg/newestMovies/02.png") no-repeat 99.3% 60%;
+   background-size: 14.5px;
+   position: relative;
+   top: 2.5px
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieJanr{
+   text-indent: 24px;
+   line-height: 15px;
+   background: url("../digiMoviesImg/movieDetail/03.png") no-repeat 99.5% 40%;
+   background-size: 17.5px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieDrector{
+   text-indent: 24px;
+   background: url("../digiMoviesImg/movieDetail/04.png") no-repeat 99.3% 40%;
+   background-size: 15px;
+   position: relative;
+   top: -5px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieStars{
+   text-indent: 24px;
+   background: url("../digiMoviesImg/movieDetail/05.png") no-repeat 99.7% 40%;
+   background-size: 18px;
+   position: relative;
+   top: -7px;
+   line-height: 14.3px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieCuntrys{
+   text-indent: 24px;
+   line-height: 14.9px;
+   background: url("../digiMoviesImg/movieDetail/06.png") no-repeat 99.6% 10%;
+   background-size: 17.5px;
+   position: relative;
+   top: -10px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieTime,
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieJanr,
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieDrector,
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieStars,
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieCuntrys{
+   margin-top: 18.5px;  
+   cursor: pointer;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .movieDiscription{  
+   height: 54px;
+   flex-flow: row wrap;
+   margin-top: 20px;
+   font-size: 12.9px;
+   line-height: 22px;
+   padding-top: 5px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .downloadTitle{
+   display: flex;
+   justify-content: end;
+   text-indent: 5px;
+   margin-top: 15px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieInformation > .downloadTitle > .downlaodFilm{
+   color: #eb8307;
+   margin-left: 20px;
+   cursor: pointer;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover{
+   \\border: 1px solid #ccc;
+   width: 204px;
+   height: 405px;
+   margin-left: 27px;
+   margin-top: 12px;
+   z-index: 99;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover > .images{
+   width: 100%;
+   height: 307px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover > .images > img{
+   height: 100%;
+   border-radius: 10px;
+   cursor: pointer;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser:hover{
+   color: #eb8307;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser:hover > .tilerIcon{
+   background: #eb8307 url("../digiMoviesImg/newestMovies/tiler2.png") no-repeat 50%;
+   background-size: 30px;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser:hover > .tilerIcon2{
+   background: #eb8307;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser{
+   width: 204px;
+   height: 58px;
+   margin-top: 20px;
+   background: #2d2d2d;
+   text-indent: 35px;
+   font-size: 13.5px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 10px;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   transition: all .2s ease-in-out;
+   
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser > .tilerIcon{
+   width: 65px;
+   height: 100%;
+   background: #1a1a1a url("../digiMoviesImg/newestMovies/tiler1.png") no-repeat 50%;
+   background-size: 30px;
+   z-index: 100;
+   transition: all .2s ease-in-out;
+}
+#content > #newestMovie > #topMovies > .movieBaner > .movieCover > .movieTiser > .tilerIcon2{
+   width: 89px;
+   height: 113px;
+   background: #1a1a1a;
+   position: absolute;
+   left: 68%;
+   margin-top: 15px;
+   outline: none;
+   transform: rotate(-70deg);
+   transition: all .2s ease-in-out;
+}
+/* #content > #newestMovie > #topMovies > #movieBaner > #movieInformation > #movieDownload{
+   border: 0 none;
+   width: 60px;
+   height: 60px;
+   position: relative;
+   right: 84%;
+   top: 5px;
+   transform: rotate(45deg);
+   border-radius: 15px;
+   background: #050505 url("../digiMoviesImg/download.png") no-repeat 50%;
+   background-size: 17px;
+}
+#content > #newestMovie > #topMovies > #movieBaner > #movieInformation > #movieDownload > .pointIcon{
+   width: 28px;
+   height: 28px;
+    transform: rotate(90deg); 
+   background: #eb8307;
+  
+   border-radius: 5px;
+   position:absolute;
+   top: 7px;
+   right: 25px;
+} */
+/* top series */
+#content > #newestMovie > #topSeries{
+   \\border: 1px solid #ccc;
+   width: 292px;
+   height: 100%;
+   margin-left: 20px;
+}
+#content > #newestMovie > #topSeries > #newestSeries{
+   width: 271px;
+   height: 1820.5px;
+   padding: 10px;
+   border-radius: 10px;
+   background: #242424;
+}
+#content > #newestMovie > #topSeries > #newestSeries > #tittleBox{
+   width: 100%;
+   height: 67px;
+   text-align: center;
+   font-size: 12px;
+   text-indent: -20px;
+   line-height: 18px;
+   font-weight: 300;
+   background: url("../digiMoviesImg/newestSeries/tv.png") no-repeat 66.5% 35%;
+   background-size: 27px;
+}
+#content > #newestMovie > #topSeries > #newestSeries > #tittleBox > .bold{
+   font-size: 14.3px;
+   text-indent: -40px;
+   line-height: 30px;
+}
+#content > #newestMovie > #topSeries > #newestSeries > .seriesTablo{
+   width: 272.5px;
+   height: 443px;
+   margin: auto;
+   border-radius: 10px;
+   overflow: hidden;
+   cursor: pointer;
+}
+#content > #newestMovie > #topSeries > #newestSeries > .seriesTablo > div{
+   height: 410px;
+}
+#content > #newestMovie > #topSeries > #newestSeries > .seriesTablo > div > img{
+   height: 100%;
+}
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries1 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries2 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries3 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries4 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries5 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries6 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries7 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries8 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries9 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries10 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries11 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries12 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries13 > div > img,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries14 > div > img{
+   height: 100%;
+   opacity: 0.8;
+}
+#content > #newestMovie > #topSeries > #newestSeries > .seriesTablo > .seriesPart,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries1 > .updateTitle1,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries2 > .updateTitle2,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries3 > .updateTitle3,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries4 > .updateTitle4,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries5 > .updateTitle5,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries6 > .updateTitle6,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries7 > .updateTitle7,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries8 > .updateTitle8,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries9 > .updateTitle9,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries10 > .updateTitle10,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries11 > .updateTitle11,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries12 > .updateTitle12,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries13 > .updateTitle13,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries14 > .updateTitle14{
+   height: 32px;
+   background-color: #1a1a1a;
+   font-size: 12px;
+   line-height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+#content > #newestMovie > #topSeries > #newestSeries > .seriesTablo > .seriesPart > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries1 > .updateTitle1 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries2 > .updateTitle2 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries3 > .updateTitle3 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries4 > .updateTitle4 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries5 > .updateTitle5 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries6 > .updateTitle6 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries7 > .updateTitle7 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries8 > .updateTitle8 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries9 > .updateTitle9 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries10 > .updateTitle10 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries11 > .updateTitle11 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries12 > .updateTitle12 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries13 > .updateTitle13 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries14 > .updateTitle14 > div{
+   width: 18px;
+   height: 18px;
+   background-color: #eb8307;
+   border-radius: 80px;
+   line-height: 20px;
+   text-align: center;
+}
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries1,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries2,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries3,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries4,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries5,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries6,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries7,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries8,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries9,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries10,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries11,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries12,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries13,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries14{
+   width: 272.5px;
+   height: 82.3px;
+   margin: auto;
+   margin-top: 10px;
+   border-radius: 10px;
+   overflow: hidden;
+   cursor: pointer;
+}
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries1 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries2 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries3 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries4 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries5 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries6 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries7 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries8 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries9 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries10 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries11 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries12 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries13 > div,
+#content > #newestMovie > #topSeries > #newestSeries > .updateSeries14 > div{
+   height: 50.33px;
+}
+/* Newest Movie and Series end*/
+/* slider 1 */
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies{
+   width: 292.5px;
+   height: 519px;
+   border-radius: 10px;
+   background: #242424;
+   margin-top: 22px;
+} 
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > .titleBox2{
+   width: 100%;
+   height: 66.66px;
+   position: relative;
+   top: 10px;
+   text-align: center;
+   font-size: 12px;
+   text-indent: -35px;
+   line-height: 18px;
+   background: url("../digiMoviesImg/digiSlider1/microfon.png") no-repeat 70% 35%;
+   background-size: 43px;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > .titleBox2 > .bold2{
+   font-size: 14.3px;
+   text-indent: -43px;
+   line-height: 30px;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1{
+   width:292px;
+	height:480px;
+   position: relative;
+   top: 10px;
+   overflow: hidden;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #galeryImage1{
+  \\border: 1px solid blue;
+  width: 500%;
+  height: 90%;
+  transition:0.5s;
+  position:absolute;
+  left:0%;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #galeryImage1 > .items{
+   width:18.5%;
+	height:90%;
+	float:left;
+   position: relative;
+   left:22px;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #galeryImage1 > .items > img{
+   width:91%;
+	height:90%;
+   cursor: pointer;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #galeryImage1 > .items > div{
+   text-indent: -25px;
+   font-size: 20px;
+   text-align: center;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #galeryImage1 > .items > .point{
+   display: flex;
+   text-indent: 130px;
+   line-height: 25px;
+   font-size: 13px;
+   font-weight: bold;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #galeryImage1 > .items > .point > .orange{
+   position: relative;
+   right: 68%;
+   font-size: 20px;
+   color:#eb8307;
+   line-height: 22px; 
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #right1{
+   background:#494949 url("../digiMoviesImg/digiSlider1/right.png") no-repeat;
+   background-size: contain;
+	width:19px;
+	height:19px;
+   border-radius: 100%;
+	cursor:pointer;
+	position:relative;
+	left:92%;
+   top: 36.4%;
+}
+#content > #newestMovie > #topSeries > #FarsiDubbedMovies > #slider1 > #left1{
+   background:#494949 url("../digiMoviesImg/digiSlider1/left.png") no-repeat;
+   background-size: contain;
+	width:19px;
+	height:19px;
+   border-radius: 100%;
+	cursor:pointer;
+	position:relative;
+	left:1%;
+   top: 32.35%;
+}
+/* slider 1 end */
+/* faction movie */
+#content > #newestMovie > #topSeries > #factionMovies,
+#content > #newestMovie > #topSeries > #factionseries{
+   width: 292px;
+   height: 970px;
+   background: #242424;
+   margin-top: 20px;
+   border-radius: 10px;
+}
+#content > #newestMovie > #topSeries > #factionMovies > .titleBox3,
+#content > #newestMovie > #topSeries > #factionseries > .titleBox4{
+   width: 100%;
+   height: 50px;
+   position: relative;
+   top: 15px;
+   text-align: center;
+   font-size: 12px;
+   line-height:25px;
+   text-indent: -30px;
+   background: url("../digiMoviesImg/digiSlider1/category.png") no-repeat 67%;
+   background-size: 43px;
+}
+#content > #newestMovie > #topSeries > #factionMovies > .titleBox3 > .bold3,
+#content > #newestMovie > #topSeries > #factionseries > .titleBox4 > .bold4{
+   font-size: 14.3px;
+   text-indent: -55px;
+}
+#content > #newestMovie > #topSeries > #factionMovies > #factionFilm,
+#content > #newestMovie > #topSeries > #factionseries > #factionSerie{
+   width: 100%;
+   height: 940px;
+   margin-top:20px;
+   direction: rtl;
+}
+#content > #newestMovie > #topSeries > #factionMovies > #factionFilm > div:hover,
+#content > #newestMovie > #topSeries > #factionseries > #factionSerie > div:hover{
+   color: #eb8307;
+}
+#content > #newestMovie > #topSeries > #factionMovies > #factionFilm > div,
+#content > #newestMovie > #topSeries > #factionseries > #factionSerie > div{
+   width: 40%;
+   height: 30px;
+   background: url("../digiMoviesImg/digiSlider1/left.png") no-repeat 97.5%;
+   background-size: 15px;
+   text-indent: 23px;
+   color: #bebebe;
+   font-size: 13.5px;
+   line-height: 30px;
+   cursor: pointer;
+}
+/* faction movie end */
+/* Incoming Movie Tiler */
+#content > #newestMovie > #topSeries > #movieIncoming{
+   width: 100%;
+   height: 510.1px;
+   background: #242424;
+   margin-top: 20px;
+   border-radius: 10px;
+}
+#content > #newestMovie > #topSeries > #movieIncoming > .titleBox5{
+   width: 100%;
+   height: 50px;
+   position: relative;
+   top: 15px;
+   text-align: center;
+   font-size: 11.5px;
+   line-height:25px;
+   text-indent: -40px;
+   background: url("../digiMoviesImg/digiSlider1/tilerMovie.png") no-repeat 61%;
+   background-size: 28px;
+}
+#content > #newestMovie > #topSeries > #movieIncoming > .titleBox5 > .bold5{
+   font-size: 14.5px;
+   text-indent: -40px;
+}
+#content > #newestMovie > #topSeries > #movieIncoming > .tilerCover{
+   width: 243px;
+   height: 360px;
+   margin: auto;
+   border-radius: 10px;
+   background: url("../digiMoviesImg/digiSlider1/tilerCover.png") no-repeat;
+   background-size: 100% 100%;
+   margin-top: 25px;
+   cursor: pointer;
+}
+#content > #newestMovie > #topSeries > #movieIncoming > .coverName{
+   width: 243px;
+   height: 38.4px;
+   margin: auto;
+   margin-top: 13px;
+   font-size: 120%;
+   text-align: center;
+   line-height: 22px;
+}
+/* Incoming Movie Tiler end*/
+/* Move to next page for see other movies & series Btns */
+#content  > #wentOtherMovies{
+   width: 704px;
+   height: 34px;
+   margin: auto;
+   position: relative;
+   right: 15%;
+   bottom: 120px;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;  
+}
+#content  > #wentOtherMovies > div{
+   width: 34px;
+   height: 34px;
+   text-align: center;
+   line-height: 20px;
+   transform: rotate(45deg);
+   white-space: nowrap;
+   border-radius: 7px;
+   cursor: pointer;
+}
+#content  > #wentOtherMovies > div.selectPage,
+#content  > #wentOtherMovies > div.goNextPageBtn{
+   background: #242424;
+   color: #eb8307;
+}
+#content  > #wentOtherMovies > div.goNextPageBtn > div{
+   background: url("../digiMoviesImg/digiSlider1/right.png") no-repeat 50%;
+   background-size: 20px;
+}
+#content  > #wentOtherMovies > div > div{
+   width: 34px;
+   height: 34px;
+   transform: rotate(315deg);
+   line-height: 35px;
+}
+#content  > #wentOtherMovies > div:hover:not(.selectPage,.goNextPageBtn){
+   background: #242424;
+   color: #eb8307;
+}
+/* Move to next page for see other movies & series Btns end */

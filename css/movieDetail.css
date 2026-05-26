@@ -1,0 +1,293 @@
+/* digimovies light mode */
+.light > #movieDetail{
+   color: #000;
+}
+.light > #movieDetail > #detailInformation > #MovieData > #rightPart > .onlineWatchFilm{
+  color: #fff;
+}
+.light > #movieDetail > #detailInformation > #MovieData > #leftPart > #moviePoint > #favoriteFilmBtn{
+  background: url("../digiMoviesImg/movieDetail/favorite2.png") no-repeat 50%;
+  background-size: 20px;
+}
+.light > #movieDetail > #detailInformation > img{
+  opacity: 0.2;
+}
+/* digimovies light mode end */
+#movieDetail{
+  \\border: 1px solid #ccc;
+  max-width:1536px !important;
+  height: 1000px;
+  margin: auto;
+  color: #fff;
+}
+#movieDetail > #backToHomeBtn{
+  \\border: 1px solid #ccc;
+  max-width: 1170px;
+  height: 63.8px;
+  margin: auto;
+  background: url("../digiMoviesImg/movieDetail/location.png") no-repeat 100% 40%;
+  background-size: 16px;
+  display: flex;
+  align-items: center;
+  direction: rtl;
+  font-size: 13.5px;
+}
+#movieDetail > #backToHomeBtn > div:hover{
+  color: #eb8307;
+}
+#movieDetail > #backToHomeBtn > div{
+  position: relative;
+  right: 25px;
+  bottom: 2px;
+  padding-left: 25px;
+  margin-left: 5px;
+  font-weight: 300;
+  transition: 0.08s;
+}
+#movieDetail > #backToHomeBtn > #homeBtn,
+#movieDetail > #backToHomeBtn > #downlaodFilmBtn{
+  background: url("../digiMoviesImg/digiSlider1/left.png") no-repeat 0% 60%;
+  background-size: 17px;
+  cursor: pointer;
+}
+/* movie data */
+#movieDetail > #detailInformation{
+  \\border: 1px solid #ccc;
+  width: 100%;
+  height: 800.1px;
+}
+#movieDetail > #detailInformation > img{
+  height: 115%;
+  width: 100%;
+  opacity: 0.4;
+  position: absolute;
+}
+#movieDetail > #detailInformation > #MovieData{
+  max-width:1170px;
+  height: 587.1px;
+  margin: auto;
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart{
+  width: 70%; 
+  height: 100%;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > #filmTitle{
+  max-width: 795px;
+  height: 90.5px;
+  display: flex;
+  justify-content: space-between;
+  direction: rtl;
+  font-size: 24px;
+  line-height: 55px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart >  #moviePoint{
+ \\border: 1px solid #ccc;
+  width: 150px;
+  height: 90px;
+  direction: ltr;
+  margin-top: -90px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart >  #moviePoint > #point{
+  border-bottom: 1px solid #eb8307;
+  width: 45%;
+  height: 30%;
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  text-indent: 35px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart >  #moviePoint > #point > #pointValiu{
+  color: #6c3;
+  font-size: 20px;
+  font-weight: 700;
+  text-indent: -52px;
+  position: relative;
+  top: -2px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart >  #moviePoint > #votes{
+  \\border: 1px solid #ccc;
+  width: 55%;
+  height: 70%;
+  background: url("../digiMoviesImg/movieDetail/imdbLogo.png") no-repeat 35% 80%;
+  background-size: 50px;
+  font-size: 13px;
+  line-height: 35px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart >  #moviePoint > #favoriteFilmBtn{
+  border: 1px solid #5c5c5c;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background: url("../digiMoviesImg/movieDetail/favorite.png") no-repeat 50%;
+  background-size: 20px;
+  position: relative;
+  left: 96px;
+  top: -80px;
+  cursor: pointer;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart >  #moviePoint > .movieSubtitle2{
+  width: 60px;
+  height: 60px;
+  background: url("../digiMoviesImg/movieDetail/subtittle.png") no-repeat 50%;
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 255px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > #moviePoint > .iranianLanguage2{
+  width: 60px;
+  height: 60px;
+  background: url("../digiMoviesImg/movieDetail/farsylanguege.png") no-repeat 50%;
+  background-size: contain;
+  position: absolute;
+  left: -30px;
+  top: 195px;
+}
+
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul{
+  \\border: 1px solid #ccc;
+  max-width: 795px;
+  height: 240px;
+  margin: 0;
+  padding: 0;
+  margin-top: 48px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > li{
+  \\border: 1px solid red;
+  width: 381.88px;
+  height: 23px;
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+  position: relative;
+  top: -30px;
+  direction: rtl;
+  text-align: right;
+  font-size: 13.5px;
+  text-indent: 22px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieQoality2{
+  background: url("../digiMoviesImg/movieDetail/01.png") no-repeat 100% 90%;
+  background-size: 18px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieTime2{
+  background: url("../digiMoviesImg/movieDetail/02.png") no-repeat 91.5% 90%;
+  background-size: 15px;
+  text-indent: 52px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieJanr2{
+  background: url("../digiMoviesImg/movieDetail/03.png") no-repeat 100% 90%;
+  background-size: 18px;
+  margin-top: 22px;
+  position: relative;
+  top: -27px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieAgg{
+  background: url("../digiMoviesImg/movieDetail/07.png") no-repeat 91.7% 90%;
+  background-size: 17px;
+  margin-top: 22px;
+  text-indent: 52px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieDirector2{
+  background: url("../digiMoviesImg/movieDetail/04.png") no-repeat 99.7% 90%;
+  background-size: 15px;
+  margin-top: 24px;
+  position: relative;
+  top: -25px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieCuntrys2{
+  background: url("../digiMoviesImg/movieDetail/06.png") no-repeat 91.7% 90%;
+  background-size: 18px;
+  margin-top: 24px;
+  text-indent: 52px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieWriter{
+  background: url("../digiMoviesImg/movieDetail/08.png") no-repeat 99.7% 90%;
+  background-size: 16px;
+  margin-top: 30px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > li#movieStars{
+  background: url("../digiMoviesImg/movieDetail/05.png") no-repeat 99.7% 90%;
+  background-size: 17px;
+  margin-top: 24px;
+  margin-left: 300px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieCanal{
+  background: url("../digiMoviesImg/movieDetail/10.png") no-repeat 91.7% 60%;
+  background-size: 18px;
+  margin-top: 24px;
+  text-indent: 52px;
+}
+#movieDetail > #detailInformation > #MovieData > #leftPart > ul > #movieDiscroption2{
+  width: 795.6px;
+  height: 44px;
+  flex-flow: row wrap;
+  font-size: 13px;
+  text-align: right;
+  direction: rtl;
+  display: flex;
+  position: relative;
+  top: -5px;
+}
+/* movie cover */
+#movieDetail > #detailInformation > #MovieData > #rightPart{
+  width: 30%;
+  height: 100%;
+}
+#movieDetail > #detailInformation > #MovieData > #rightPart > #movieCover{
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(170deg,#eb8307,transparent);
+  border-radius: 10px;
+}
+#movieDetail > #detailInformation > #MovieData > #rightPart > #movieCover > img{
+  height: 99%;
+  width: 98.5%;
+  border-radius: 10px;
+  position: relative;
+  left: 3px;
+  top:3px;
+  cursor: pointer;
+}
+#movieDetail > #detailInformation > #MovieData > #rightPart > #watchTreyler{
+  width: 42px;
+  height: 42px;
+  background: #eb8307;
+  transform: rotate(45deg);
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  top: -35px;
+  left: 2px;
+}
+#movieDetail > #detailInformation > #MovieData > #rightPart > #watchTreyler > .treylerIcon{
+  width: 42px;
+  height: 42px;
+  background: url("../digiMoviesImg/movieDetail/playVedio.png") no-repeat 50%;
+  background-size: 20px;
+  transform: rotate(315deg);
+  cursor: pointer;
+}
+#movieDetail > #detailInformation > #MovieData > #rightPart > .treylerText{
+  text-align: center;
+  font-size: 13px;
+  color: #8f8f8f;
+  margin-top: -25px;
+}
+#movieDetail > #detailInformation > #MovieData > #rightPart > .onlineWatchFilm{
+  width: 115px;
+  height: 43px;
+  border-radius: 35px;
+  background: #eb8307;
+  text-align: center;
+  font-size: 14.5px;
+  line-height: 40px;
+  margin: auto;
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+}

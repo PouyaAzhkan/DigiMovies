@@ -1,0 +1,570 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #050505;
+  color: #fff;
+  overflow-x: hidden;
+  font-family: digiFont;
+}
+.hide{
+  display: none;
+  visibility: hidden;
+}
+.show{
+  display: block;
+  visibility: visible;
+}
+/* header light mode */
+.light > #header > #topPart > #digiLogo > #lightandDarkMode{
+  background: #ccc url("../digiMoviesImg/moon.png")  no-repeat 95%;
+  background-size: 27px;
+}
+.light > #header > #topPart > #loginToPanel > #SignIn{
+  background: #fff url("../digiMoviesImg/person2.png") no-repeat 80%;
+  background-size: 17px;
+  color: #333;
+}
+.light > #header > #topPart > #loginToPanel > #logIn{
+  background: #fff url("../digiMoviesImg/login2.png") no-repeat 85%;
+  background-size: 19px;
+  color: #333;
+}
+.light > #header > #bottomPart{
+  background: rgba(252,255,255,.9);
+  box-shadow: 0px 0px 15px 0px rgba(100,100,100,.1);
+}
+.light > #header > #bottomPart > #categoryMovie > #search > input{
+  background: #ccc url("../digiMoviesImg/search.png") no-repeat 4% 53%;
+  background-size: 16.7px;
+  color: #898989;
+}
+.light > #header > #bottomPart > #categoryMovie > #search > #movieResult{
+  background: #fff;
+  color: #333;
+}
+.light > #header > #bottomPart > #categoryMovie > #search > #movieResult > div{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.light > #header > #bottomPart > #categoryMovie > #search > #movieResult > div > .movieName > .movieJanr2{
+  color: #555;
+}
+.light > #header > #bottomPart > #categoryMovie > #megaMenu > ul{
+  color: #333;
+}
+.light > #header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > .categoryFilm{
+  background: rgba(255,255,255,.9) url("../digiMoviesImg/megaMenu/joker.png") no-repeat 2% 100%;
+  background-size: 180px;
+  color: #333;
+}
+.light > #header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > .categorySeries{
+  background: rgba(255,255,255,.9) url("../digiMoviesImg/megaMenu/breakingbad.png") no-repeat 2% 100%;
+  background-size: 180px;
+  color: #333;
+}
+.light > #header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > .categoryArtists{
+  background: rgba(255,255,255,.9) url("../digiMoviesImg/megaMenu/dekapio.png") no-repeat 2% 100%;
+  background-size: 180px;
+  color: #333;
+}
+.light > #header > #bottomPart > #acardionBtn{
+  background: #ccc url("../digiMoviesImg/lightMenu.png") no-repeat 50%;
+  background-size:20px;
+}
+/* header light mode end*/
+@font-face {
+  src: url(../fonts/Qs_Iranyekan.ttf);
+  font-family: digiFont;
+}
+#header{
+  \\border: 1px solid #ccc;
+  max-width:1536px !important;
+  height: 191px;
+  margin: auto;
+}
+#header > #topPart{
+  \\border: 1px solid #ccc;
+  max-width: 1170px;
+  height: 105px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header > #topPart > #digiLogo{
+  \\border: 1px solid #ccc;
+  max-width: 355px;
+  height: 100%;
+  display: flex;
+}
+#header > #topPart > #digiLogo > img{
+   height: 58%;
+   margin-top: 18px;
+}
+#header > #topPart > #digiLogo > #lightandDarkMode{
+  height: 34px;
+  width: 82px;
+  background: #252525 url("../digiMoviesImg/moon.png")  no-repeat 95%;
+  background-size: 27px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-left: 25px;
+  position: relative;
+}
+#header > #topPart > #digiLogo > #lightandDarkMode > img{
+  height: 80%;
+  margin-left: 3px;
+}
+#header > #topPart > #digiLogo > #lightandDarkMode > #changeModeBotton{
+  width: 28.5px;
+  height: 28.5px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  right: 29px;
+  left: -29px;
+  transition: 0.5s;
+}
+#header > #topPart > #loginToPanel{
+  \\border: 1px solid #ccc;
+  width: 242px;
+  height: 50%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  /* font-family:iranYekan, sans-serif; */
+  font-family: digiFont;
+  font-weight:300;
+}
+#header > #topPart > #loginToPanel > #SignIn{
+  width: 116px;
+  height: 38px;
+  line-height: 37px;
+  text-indent: -25px;
+  margin-left: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 19px;
+  background:#252525 url("../digiMoviesImg/person.png") no-repeat 80%;
+  background-size: 17px;
+  font-family: digiFont;
+}
+#header > #topPart > #loginToPanel > #logIn{
+  width: 116px;
+  height: 38px;
+  line-height: 37px;
+  text-indent: -25px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: digiFont;
+  font-weight: 500;
+  border-radius: 19px;
+  background:#252525 url("../digiMoviesImg/logIn.png") no-repeat 85%;
+  background-size: 19px;
+  position: relative;
+  right: 3px;
+}
+#header > #topPart > #loginToPanel > #logIn:hover{
+ background:#eb8307 url("../digiMoviesImg/logIn.png") no-repeat 85%;
+ background-size: 17px;
+}
+#header > #topPart > #loginToPanel > #SignIn:hover{
+  background:#eb8307 url("../digiMoviesImg/person.png") no-repeat 80%;
+  background-size: 17px;
+}
+/* top part end */
+#header > #bottomPart{
+  \\border: 1px solid #ccc;
+  width: 100%;
+  height: 86px;
+  background: rgba(34,34,34,.9);
+  box-shadow: 0px 0px 7px 0px rgba(0,0,0,.4);
+  float: right;
+}
+#header > #bottomPart > #categoryMovie{
+  max-width: 1170px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+#header > #bottomPart > #categoryMovie > #search{
+  width: 1027px;
+}
+#header > #bottomPart > #categoryMovie > #search > input{
+  border: 0 none;
+  min-width: 325px;
+  height: 40px;
+  background: #050505 url("../digiMoviesImg/search.png") no-repeat 4% 53%;
+  background-size: 16.7px;
+  color: #898989;
+  border-radius: 35px;
+  cursor: pointer;
+  outline: 0 none;
+  text-indent: 8px;
+  font-family: digiFont;
+  direction: rtl;
+  margin-bottom: 5px;
+}
+#header > #bottomPart > #categoryMovie > #search > #movieResult{
+  \\border: 1px solid #ccc;
+  width: 330px;
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  background: #1c1c1c;
+  z-index: 2000;
+  border-radius: 10px;
+  box-shadow: 0px 5px 16px 0px rgba(32,35,56,.05);
+}
+#header > #bottomPart > #categoryMovie > #search > #movieResult > div{
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  width: 100%;
+  height: 93.3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header > #bottomPart > #categoryMovie > #search > #movieResult > div > .movieImdb{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  right: 17px;
+  bottom: 1px;
+  background: url("../digiMoviesImg/searchImg/star.png") no-repeat 49% 0%;
+  background-size: 17.5px;
+  line-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #search > #movieResult > div > .moviePicture{
+  width:58px;
+  height: 58px;
+  position: relative;
+  right: 10px;
+  bottom: 5px;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #search > #movieResult > div > .moviePicture > img{
+  height: 100%;
+  border-radius: 5px;
+}
+#header > #bottomPart > #categoryMovie > #search > #movieResult > div > .movieName{
+  width: 178px;
+  height: 45px;
+  position: relative;
+  left: 5px;
+  line-height: 22px;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #search > #movieResult > div > .movieName > .movieJanr2{
+  font-size: 11px;
+  color: #ccc;
+  white-space: nowrap;
+}
+#header > #bottomPart > #categoryMovie > #search > #movieResult > #showAllResults{
+  background: #1c1c1c;
+  width: 330px;
+  height: 34.4px;
+  position: absolute;
+  border-radius: 0px 0px 10px 10px;
+  text-align:center;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul{
+  \\border: 1px solid #ccc;
+  max-width: 650.5px;
+  height: 42px;
+  display: flex;
+  list-style: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  margin-bottom: 10px;
+  
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li{
+  \\border: 1px solid #ccc;
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size:13.5px;
+  position: relative;
+  bottom: 3px;
+  padding: 0;
+  margin: 0;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiHome > ul > #home:hover,
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > ul > #film:hover,
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > ul > #tv:hover,
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > ul > #theater:hover{
+  transform: scale(1.25);
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiHome > ul > #home{
+  font-size: 22px;
+  margin-top: 12px;
+  transition: 0.3s;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title{
+  width: 94px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title > li{
+  width: 50px;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title > li.orageText{
+  color:#eb8307;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title2{
+  width: 100px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > ul > #film{
+  font-size: 22px;
+  margin-top: 12px;
+  transition: 0.3s;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title2 > li.orageText{
+  color:#eb8307;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title3{
+  width: 95px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > ul > #tv{
+  font-size: 20px;
+  margin-top: 14px;
+  transition: 0.3s;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title3 > li.orageText{
+  color:#eb8307;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title4{
+  width: 75px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > ul > #theater{
+  font-size: 20px;
+  margin-top: 14px;
+  margin-right: 18px;
+  transition: 0.3s;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title4 > li.orageText{
+  color:#eb8307;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiAplications{
+  background: url("../digiMoviesImg/megaMenu/anroid.png") no-repeat 78%;
+  background-size: 25px;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title5{
+  width: 75px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiAplications > ul{
+  margin-right: 58px;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > li > ul > .title5 > li.orageText{
+  color:#eb8307;
+}
+/* categorys movie*/
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies:hover > .categoryFilm{
+  opacity: 1;
+  visibility: visible;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > .categoryFilm{
+  width: 678px;
+  height: 285px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 33px;
+  left: 130px;
+  list-style: none;
+  background: rgba(32,32,32,.9) url("../digiMoviesImg/megaMenu/joker.png") no-repeat 2% 100%;
+  background-size: 180px;
+  color: #fff;
+  font-family: digiFont;
+  font-size: 14.5px;
+  box-sizing: border-box;
+  z-index: 100000;
+  padding-top: 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  cursor:auto;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > .categoryFilm > li{
+  position: relative;
+  top: 30px;
+  background: url("../digiMoviesImg/megaMenu/rhombus.png") no-repeat 97%;
+  background-size: 12.5px;
+  line-height: 40px;
+  text-indent: 40px;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > .categoryFilm > ul{
+  list-style: none;
+  position: relative;
+  right: 200px;
+  bottom: 66%;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > .categoryFilm > ul > li{
+  background: url("../digiMoviesImg/megaMenu/rhombus.png") no-repeat 97%;
+  background-size: 12.7px;
+  line-height: 40px;
+  text-indent: 40px;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > .categoryFilm > li:hover,
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiMovies > .categoryFilm > ul > li:hover{
+  color: #eb8307;
+}
+/* category series */
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries:hover > .categorySeries{
+  opacity: 1;
+  visibility: visible;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > .categorySeries{
+  width: 678px;
+  height: 321px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 33px;
+  left: 260px;
+  list-style: none;
+  background: rgba(32,32,32,.9) url("../digiMoviesImg/megaMenu/breakingbad.png") no-repeat 2% 100%;
+  background-size: 180px;
+  color: #fff;
+  font-family: digiFont;
+  font-size: 14.5px;
+  box-sizing: border-box;
+  z-index: 10;
+  padding-top: 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  cursor:auto;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > .categorySeries > li{
+  position: relative;
+  top: 20px;
+  background: url("../digiMoviesImg/megaMenu/rhombus.png") no-repeat 97%;
+  background-size: 12.5px;
+  line-height: 40px;
+  text-indent: 40px;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > .categorySeries > ul{
+  list-style: none;
+  position: relative;
+  right: 200px;
+  bottom: 75.5%;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > .categorySeries > ul > li{
+  background: url("../digiMoviesImg/megaMenu/rhombus.png") no-repeat 97%;
+  background-size: 12.7px;
+  line-height: 40px;
+  text-indent: 40px;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > .categorySeries > li:hover,
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiSeries > .categorySeries > ul > li:hover{
+  color: #eb8307;
+}
+/* category Artists */
+
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists:hover > .categoryArtists{
+  opacity: 1;
+  visibility: visible;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > .categoryArtists{
+  width: 678px;
+  height: 309px;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 33px;
+  left: 390px;
+  list-style: none;
+  background: rgba(32,32,32,.9) url("../digiMoviesImg/megaMenu/dekapio.png") no-repeat 2% 100%;
+  background-size: 180px;
+  color: #fff;
+  font-family: digiFont;
+  font-size: 14.5px;
+  box-sizing: border-box;
+  z-index: 10;
+  padding-top: 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  cursor:auto;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > .categoryArtists > li{
+  position: relative;
+  top: 170px;
+  background: url("../digiMoviesImg/megaMenu/rhombus.png") no-repeat 97%;
+  background-size: 12.5px;
+  line-height: 40px;
+  text-indent: 40px;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > .categoryArtists > ul{
+  list-style: none;
+  position: relative;
+  right: 200px;
+  bottom: -32.1%;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > .categoryArtists > ul > li{
+  background: url("../digiMoviesImg/megaMenu/rhombus.png") no-repeat 97%;
+  background-size: 12.7px;
+  line-height: 40px;
+  text-indent: 40px;
+  cursor: pointer;
+}
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > .categoryArtists > li:hover,
+#header > #bottomPart > #categoryMovie > #megaMenu > ul > .digiArtists > .categoryArtists > ul > li:hover{
+  color: #eb8307;
+}
+#header > #bottomPart > #acardionBtn{
+  width: 42px;
+  height: 42px;
+  background: #000 url("../digiMoviesImg/menu.png") no-repeat 50%;
+  background-size:20px;
+  border-radius: 5px;
+  display: none;
+  position: relative;
+  bottom:55px;
+  left: 85%;
+  cursor: pointer;
+}
