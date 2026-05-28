@@ -31,7 +31,8 @@ cd DigiMovies
 # open Index.html
 Open File index.html
 
+```
 
-⭐ support
+## ⭐ support
 
 If you liked it, leave a ⭐ star and share it with your friends!
