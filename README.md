@@ -5,7 +5,7 @@
 ## 📸 preview
 
 ![DigiMoviesPreview](digiMoviesImg/searchImg/Screenshot%202026-05-28%20121346.png)
-![DigiMoviesPreview](digiMoviesImg/searchImg/Screenshot%202026-05-28%20121413.png)
+![DigiMoviesPreview](digiMoviesImg/searchImg/Screenshot%202026-05-28%20122124.png)
 
 ## ✨ Features
 
